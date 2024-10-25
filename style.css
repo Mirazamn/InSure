@@ -1,0 +1,385 @@
+@import url(https://fonts.googleapis.com/css2?family=Karla:wght@100;200;300;400;500;600;700&display=swap);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Karla', sans-serif;
+}
+
+
+.menu {
+    display: none;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+
+main {
+    padding: 0 0 150px 0;
+}
+
+
+/* Header */
+header .container {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.flex li a {
+    font-size: 13px;
+    font-weight: 700;
+    color: #837D88;
+}
+
+
+.btn {
+    padding: 13px 28.5px;
+    background-color: transparent;
+    border: 1.5px solid #2C2830
+}
+
+
+.btn a {
+    font-size: 13px;
+    font-weight: 700;
+    color: #2C2830;
+}
+
+
+/* Front Section */
+main .face {
+    background-color: #2D2641;
+    height: fit-content;
+    height: 600px;
+}
+
+
+.face .container h1 {
+    font-size: 72px;
+    font-weight: 400;
+    color: #fff;
+    width: 540px;
+}
+
+
+.face .container p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    width: 540px;
+}
+
+
+.face .container {
+    width: 90%;
+}
+
+
+.face .flex {
+    gap: 0;
+    justify-content: space-between;
+}
+
+
+.face-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 105px 0;
+}
+
+
+.main-img {
+    width: 540px;
+    position: absolute;
+    bottom: -5%;
+    right: 100px;
+}
+
+
+.face .btn {
+    background-color: transparent;
+    border: 1.5px solid #FFFFFF;
+    width: 146px;
+}
+
+
+.face .btn a {
+    color: #fff;
+    border: none;
+}
+
+/* Differense */
+.differens {
+    padding: 305px 0 158px 0;
+}
+
+
+.differens .container {
+    width: 90%;
+}
+
+
+.differens .container>h1 {
+    font-size: 72px;
+    font-weight: 400;
+    color: #2C2830;
+    text-align: center;
+    padding: 0 0 96px 0;
+}
+
+
+/* Card */
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.card img {
+    width: 86px;
+}
+
+
+.card h1 {
+    font-size: 28px;
+    font-weight: 400;
+    color: #2C2830;
+}
+
+
+.card p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #837D88;
+    width: 350px;
+}
+
+
+/* Find Work */
+.find-work {
+    background-color: #2D2641;
+    background-image: url(./images/10-bg-img.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 69px 0;
+}
+
+
+.find-work .container h1 {
+    font-size: 56px;
+    font-weight: 400;
+    color: #fff;
+    width: 500px;
+}
+
+
+.find-work .btn {
+    background: transparent;
+    border: 1.5px solid #FFFFFF
+}
+
+
+.find-work .btn a {
+    color: #fff;
+}
+
+
+.find-work .flex {
+    justify-content: space-between;
+}
+
+
+/* Footer */
+footer {
+    background-color: #FAFAFA;
+    padding: 64px 0;
+}
+
+
+footer .flex {
+    justify-content: space-between;
+    padding: 0 0 36px 0;
+}
+
+
+footer .flex .social {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+
+/* Footer Ul */
+footer .main-list ul h5 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #837D88;
+}
+
+
+footer .main-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+footer .main-list ul li a {
+    font-size: 13px;
+    font-weight: 700;
+    color: #2D2641;
+}
+
+
+footer .main-list {
+    padding: 48px 0 0 0;
+}
+
+
+/* Responseve Styles */
+@media (max-width:375px) {
+    header nav {
+        display: none;
+    }
+
+
+    header .menu {
+        display: grid;
+    }
+
+
+    /* Front Section */
+    body main .face {
+        background-color: #2D2641;
+        position: relative;
+        height: 1000px;
+    }
+
+
+    .face .flex {
+        flex-direction: column-reverse;
+    }
+
+
+    .face .face-txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+
+    .face .main-img {
+        width: 375px;
+        position: static;
+    }
+
+
+    .face .container .face-txt h1 {
+        font-size: 48px;
+        width: 350px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+
+    .face .container .face-txt p {
+        font-size: 16px;
+        font-weight: 400;
+        width: 327px;
+        text-align: center;
+    }
+
+
+    /* Differense */
+    main .differens {
+        padding: 181px 0 140px 0;
+    }
+
+
+    .differens .container h1 {
+        font-size: 48px;
+    }
+
+
+    .differens .cards {
+        flex-direction: column;
+        gap: 56px;
+    }
+
+
+    .differens .cards .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .cards .card img {
+        width: 86px;
+    }
+
+
+    .cards .card h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+
+    .cards .card p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+
+    /* Find Work Section */
+    .find-work {
+        background-image: none;
+    }
+
+
+    .container .find-work .container h1 {
+        font-size: 40px;
+        width: 279px;
+        text-align: center;
+    }
+
+
+    .find-work .flex {
+        flex-direction: column;
+    }
+
+
+    /* Footer */
+    footer .main-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
